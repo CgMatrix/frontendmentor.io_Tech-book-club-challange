@@ -332,7 +332,6 @@ footer {
   padding: 1.5rem 1rem 1rem 1rem;
   border-radius: 1rem 1rem 0 0;
   color: #fff5ef;
-
 }
 .footer-icon {
   display: inline-block;
@@ -384,7 +383,7 @@ footer {
   font-family: "Martian Mono", monospace;
   font-weight: 600;
   font-style: normal;
-  font-size:.9rem;
+  font-size: 0.9rem;
   letter-spacing: -1%;
   text-decoration: none;
 }
@@ -586,6 +585,7 @@ footer {
     justify-content: space-between;
     gap: none;
     width: 90%;
+    margin: 0 auto;
   }
 }
 /*MEDIA QUERIES*/
@@ -613,44 +613,46 @@ footer {
   }
 
   /*OVERALL SETTINGS*/
-  .page-container-02, .page-container-03,.page-container-04,.page-container-05 {
+  .page-container-02,
+  .page-container-03,
+  .page-container-04,
+  .page-container-05 {
     padding: 0 8.4rem;
   }
 
-
   /*Pg1*/
-  .page-container-01{
+  .page-container-01 {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    gap:5rem;
+    gap: 5rem;
     padding-bottom: 5rem;
   }
-  .page-container-01 article{
+  .page-container-01 article {
     width: 40vw;
   }
-  .page-wrapper-01{
+  .page-wrapper-01 {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     max-width: 75rem;
-    height:42rem;
+    height: 42rem;
     padding: 0 0;
     align-items: center;
     gap: 4rem;
   }
-  .logo{
-    display:flex;
+  .logo {
+    display: flex;
     justify-items: start;
     padding-left: 5.5%;
-}
+  }
   .main-header {
     font-size: 3.875rem;
     font-weight: 700;
 
     line-height: 1.2;
   }
-  .page-01-img{
+  .page-01-img {
     width: 33rem;
     height: 37rem;
   }
@@ -659,10 +661,17 @@ footer {
     margin-top: 1.25rem;
   }
 
-  .button{
+  .button {
     font-size: 1.125rem;
     max-width: 24rem;
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
+  }
+  .social-media {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: none;
+    width: 90%;
+    margin: 0 auto;
   }
 
   /*Pg2 & 3*/
@@ -670,9 +679,8 @@ footer {
     max-width: 36rem;
   } */
 
-
-
-   .page-wrapper-02, .page-wrapper-03{
+  .page-wrapper-02,
+  .page-wrapper-03 {
     margin: 0;
     padding: 0;
     display: flex;
@@ -681,28 +689,29 @@ footer {
     justify-content: center;
 
     max-height: 32.5rem;
-    gap:5rem;
+    gap: 5rem;
   }
-   .page-wrapper-02{
+  .page-wrapper-02 {
     flex-direction: row-reverse;
-   }
+  }
 
-  .page-wrapper-03{
+  .page-wrapper-03 {
     flex-direction: row;
   }
 
-  .page-02-img, .page-03-img {
-    width:36rem;
+  .page-02-img,
+  .page-03-img {
+    width: 36rem;
     height: 100%;
   }
-  .secondary-header{
+  .secondary-header {
     font-size: 3rem;
     max-width: 40rem;
     line-height: 1.4;
     letter-spacing: -0.1rem;
     padding-bottom: 2rem;
   }
-  .check-list{
+  .check-list {
     max-width: 28rem;
   }
   .check-list li {
@@ -713,28 +722,27 @@ footer {
     margin-bottom: 0;
   }
 
-
   /*Pg4*/
-  .page-wrapper-04{
+  .page-wrapper-04 {
     flex-direction: column;
     align-items: center;
   }
-  .header-block{
+  .header-block {
     max-width: 35vw;
     text-align: center;
   }
-  .square-bullet-numbers{
+  .square-bullet-numbers {
     display: flex;
     flex-direction: row;
-    gap:3rem;
+    gap: 3rem;
   }
 
-    /*ARROWS*/
- .square-bullet-numbers div{
-    position:relative;
+  /*ARROWS*/
+  .square-bullet-numbers div {
+    position: relative;
   }
 
-  .square-bullet-numbers div:not(:last-child)::before{
+  .square-bullet-numbers div:not(:last-child)::before {
     position: absolute;
     content: "";
     display: inline-block;
@@ -749,40 +757,45 @@ footer {
   }
 
   /*Pg5*/
-  .card-box{
+  .card-box {
     margin: 0;
     padding: 0;
-    display:flex;
+    display: flex;
     flex-direction: row;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     min-width: 100%;
   }
-  .card-wrapper{
+  .card-wrapper {
     width: 20%;
-
   }
-  .card-wrapper button{
+  .card-wrapper button {
     max-width: 14rem;
   }
-  .card-wrapper:nth-child(2){
+  .card-wrapper:nth-child(2) {
     width: 25%;
     padding: 3rem 1.5rem;
   }
-  .member-review{
+  .member-review {
     margin: 0 auto;
     align-items: center;
   }
 
-  .comment{
-    max-width:60rem;
+  .comment {
+    max-width: 60rem;
     text-align: center;
   }
-  .review-bottom{
+  .review-bottom {
     justify-content: center;
   }
-  .membership-header{
-    margin:0 auto;
+  .membership-header {
+    margin: 0 auto;
   }
-
+  .social-media {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: none;
+    width: 90%;
+    margin: 0 auto;
+  }
 }
