@@ -1,0 +1,788 @@
+/*Template Size(px) = 1080x3289*/
+/*
+Colors:
+HSL(12,50%,59%);
+
+Neutral 900 - #062630;
+Neutral 700 - #385159;
+Neutral 200 - #E6E1DF;
+Neutral 100 - #FAF5F3;
+Neutral 0   - #ffffff;
+
+Light Salmon 500 - #FEA36F;
+Light Salmon 100 - #FFE2D1;
+Light Salmon 50  - #FFF5EF;
+
+Text Gradient - linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
+Gradient - linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+
+Font-weights:
+100	- Thin (Hairline)
+200	- Extra Light (Ultra Light)
+300	- Light
+400	- Normal / Regular
+500	- Medium
+600	- Semi Bold (Demi Bold)
+700	- Bold
+800	- Extra Bold (Ultra Bold)
+900	- Black (Heavy)
+
+Units:
+px:
+|16|32|48|64|80|96|112|128|144|160|176|192|208|224|240|256|272|
+rm:
+|01|02|03|04|05|06|007|008|009|010|011|012|013|014|015|016|017|
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /*value form 100 - 900*/
+  font-style: normal;
+  font-size: 1.25rem;
+}
+
+.main-container {
+  max-width: 23.44rem;
+  height: auto;
+  background-color: #ffffff;
+
+  margin: 0 auto;
+  overflow: visible;
+}
+.page-container-01 {
+  /* background-image: url(./assets/images/pattern-light-bg.svg), url(./assets/images/pattern-glow.svg); */
+  background: url(./assets/images/pattern-light-bg.svg), #faf5f3;
+  background-blend-mode: multiply;
+
+  background-position:
+    0 0,
+    100 40em;
+  background-repeat: no-repeat;
+}
+.page-container-01,
+.page-container-02,
+.page-container-03,
+.page-container-04,
+.page-container-05 {
+  margin-bottom: 4rem;
+}
+
+.page-wrapper-01 {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1rem 5rem 1rem;
+  gap: 2.5rem;
+  /* background-image: url(./assets/images/pattern-light-bg.svg); */
+}
+.page-wrapper-02 {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 1rem;
+  gap: 2.5rem;
+}
+.page-wrapper-03 {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 1rem;
+  gap: 2.5rem;
+}
+.page-wrapper-04 {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 4rem;
+  gap: 2rem;
+
+  background-color: #faf5f3;
+  background-image:
+    url(./assets/images/pattern-light-bg.svg),
+    url(./assets/images/pattern-glow.svg);
+  background-blend-mode: darken;
+  background-position:
+    100% 0,
+    0% 0em;
+  background-repeat: no-repeat;
+}
+.page-wrapper-05 {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 1rem;
+  gap: 1.5rem;
+}
+
+.logo-icon {
+  width: 12rem;
+  height: 2.5rem;
+  margin: 2rem 1rem 0 1rem;
+  background-color: none;
+}
+.main-header {
+  font-family: "Martian Mono", monospace;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2rem;
+
+  background: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+.secondary-header {
+  font-family: "Martian Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+}
+.header-block {
+  width: 13rem;
+}
+
+.arrow {
+  width: 1.5rem;
+  align-self: center;
+}
+.review-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+.review-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+.users {
+  width: 6.8rem;
+  height: 2.5rem;
+}
+.rating {
+  font-family: "Martian Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+
+  flex-direction: row;
+  gap: 0.75rem;
+}
+.rating p {
+  display: inline-block;
+  font-size: 0.75rem;
+}
+.stars {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.1rem;
+}
+.star {
+  width: 2rem;
+  align-content: center;
+}
+
+.intro {
+  margin-top: 1.5rem; /*1.5rem 0 2rem 0*/
+  margin-bottom: 2rem;
+}
+
+/*Checkmark SVG icon as bullet setup*/
+.check-list {
+  list-style: none; /* Removes default bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.check-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  gap: 1rem;
+}
+
+.check-list li::before {
+  content: "";
+  left: 0;
+  top: 4px; /* Adjust this value to vertically center the icon with your text line-height */
+  width: 1.6em; /* Icon width */
+  height: 1.6em; /* Icon height */
+  background-image: url(./assets/images/icon-check.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-shrink: 0;
+}
+
+.vertical-align li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+/*Vertical Positioned Number List setup*/
+.square-bullet-numbers {
+  font-family: "Martian Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.square-bullet-numbers li {
+  margin: 1.5rem 0 0 0;
+}
+.framed-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+
+  border: 0.15em solid black;
+  border-radius: 0.25em;
+  margin: 1rem 0 0 0;
+}
+
+/*PRICING CARDS BLOCK*/
+.page-wrapper-02 h1 {
+  font-size: 2.5rem;
+  letter-spacing: -0.1rem;
+}
+.card-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.card-wrapper {
+  padding: 1.5rem;
+  border: 0.15rem solid #e6e1df;
+  border-radius: 0.5rem;
+  line-height: 1.5;
+}
+.card-wrapper h2 {
+  font-family: "Martian Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+.card-price,
+.card-features {
+  padding-bottom: 1.5rem;
+}
+.card-features {
+  border-top: 0.15rem solid #e6e1df;
+  padding-top: 1.5rem;
+}
+.card-wrapper-background {
+  background-color: #faf5f3;
+  background-image: url(./assets/images/pattern-glow.svg);
+  background-position: 20% 0em;
+  background-repeat: no-repeat;
+}
+.card-price p {
+  display: flex;
+  align-items: center;
+}
+.price {
+  font-size: 2.75rem;
+  font-family: "Martian Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/*REVIEW BLOCK*/
+.member-review {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.25rem;
+  padding: 2.25rem 0rem 0rem 0rem;
+}
+.comment {
+  font-size: 1.6rem;
+  font-family: "Martian Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.footer,
+footer {
+  background-color: #062630;
+  background-image: url(./assets/images/pattern-dark-bg.svg);
+  background-repeat: repeat;
+}
+
+.footer {
+  padding: 1.5rem 1rem 1rem 1rem;
+  border-radius: 1rem 1rem 0 0;
+  color: #fff5ef;
+
+}
+.footer-icon {
+  display: inline-block;
+  width: 18px; /* Icon width */
+  height: 18px; /* Icon height */
+}
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  width: 90%;
+  color: #fff5ef;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  border-top: 0.15rem solid #e6e1df33;
+
+  font-family: "Martian Mono", monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 0.75rem;
+}
+.social-media-logos {
+  display: flex;
+  gap: 1rem;
+}
+.review-comment {
+  font-family: "Martian Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: -0.1rem;
+
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+
+  gap: 5%;
+
+  font-family: "Martian Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  font-size:.9rem;
+  letter-spacing: -1%;
+  text-decoration: none;
+}
+.button-white {
+  background-color: #fff5ef;
+  border: 0.15rem solid black;
+  color: black;
+}
+
+.button-green {
+  background-color: #062630;
+  border: 0.2rem solid #fff5ef;
+  color: #fff5ef;
+}
+
+/*HOVER EFFECTS*/
+.button-white:hover,
+.button-green:hover {
+  cursor: pointer;
+}
+
+/*ACTIVE EFFECTS*/
+.button-white:active {
+  cursor: pointer;
+  outline: 0.15rem double black;
+  outline-offset: 0.15rem;
+}
+.button-green:active {
+  cursor: pointer;
+  outline: 0.15rem double #fff5ef;
+  outline-offset: 0.15rem;
+}
+
+/*IMAGES*/
+.page-01-img {
+  width: 100%;
+  height: 24rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  object-fit: cover;
+}
+.page-02-img,
+.page-03-img {
+  width: 100%;
+  height: 20rem;
+  border-radius: 1rem;
+  background-color: white;
+  object-fit: cover;
+}
+
+/*Floating Image*/
+/* 1. Create a relative positioning context for the image */
+.word-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* 2. Position the image absolutely relative to the wrapper */
+.circle-mark::before {
+  content: "";
+  position: absolute;
+
+  /* 2. Load your image via CSS */
+  background-image: url(./assets/images/pattern-circle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  /* 4. Define your PNG size and file path */
+  width: 7rem;
+  height: 7rem;
+
+  /* Shift the image back by half of its own width and height to center it perfectly */
+  transform: translate(-7%, -3%);
+  z-index: 10;
+  pointer-events: none; /* Ensures clicking through the transparent parts clicks the text instead */
+}
+
+/*CSS*/
+
+/*MEDIA QUERIES*/
+/* For Tablet devices with a minimum width of 768px (Medium) */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.125rem;
+  }
+  .main-container {
+    max-width: 48rem;
+  }
+  /*Pg01*/
+  .main-header {
+    font-size: 3.875rem;
+  }
+  .page-container-01 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .page-wrapper-01 .button {
+    width: 23.75rem;
+  }
+  .review {
+    gap: 0.75rem;
+  }
+  .rating p {
+    font-size: 0.875rem;
+    letter-spacing: -0.05rem;
+  }
+  .users {
+    width: 6.875rem;
+    height: 2.5rem;
+  }
+  .page-01-img {
+    width: 0100%;
+    height: 49.375rem;
+  }
+
+  /*Pg02*/
+  .page-container-02 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .secondary-header {
+    font-size: 3.125rem;
+    width: 40rem;
+  }
+  .check-list li {
+    line-height: 2.25;
+  }
+  .check-list li:last-child {
+    margin-bottom: 0;
+  }
+  .page-02-img {
+    height: 40.8rem;
+  }
+
+  /*Pg03*/
+  .page-container-03 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .page-03-img {
+    width: 100%;
+    height: 40.8rem;
+  }
+  .circle-mark::before {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  /*Pg04*/
+  .page-container-04 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 5rem;
+  }
+  .page-wrapper-04 {
+    padding-bottom: 5rem;
+  }
+
+  /*Pg05*/
+  .page-container-05 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .card-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 0 auto;
+  }
+  .card-wrapper {
+    width: 40%;
+    height: 23rem;
+  }
+  .card-price h2 {
+    margin-bottom: 1.5rem;
+  }
+  .comment {
+    font-size: 2.1rem;
+  }
+  .review-comment {
+    font-size: 3.1rem;
+    width: 40rem;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+  }
+  .footer .button {
+    width: 23.75rem;
+    margin: 0 auto;
+  }
+  .review {
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
+  }
+  .social-media {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: none;
+    width: 90%;
+  }
+}
+/*MEDIA QUERIES*/
+/* For Desktop devices with a minimum width of 992px*/
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 1.24rem;
+    line-height: 1.5;
+  }
+  .main-container {
+    max-width: 90rem;
+    height: auto;
+    background-color: #ffffff;
+
+    margin: 0 auto;
+    row-gap: 7.5rem;
+    overflow: visible;
+  }
+  .page-container-01,
+  .page-container-02,
+  .page-container-03,
+  .page-container-04,
+  .page-container-05 {
+    margin-bottom: 7.5rem;
+  }
+
+  /*OVERALL SETTINGS*/
+  .page-container-02, .page-container-03,.page-container-04,.page-container-05 {
+    padding: 0 8.4rem;
+  }
+
+
+  /*Pg1*/
+  .page-container-01{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap:5rem;
+    padding-bottom: 5rem;
+  }
+  .page-container-01 article{
+    width: 40vw;
+  }
+  .page-wrapper-01{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 75rem;
+    height:42rem;
+    padding: 0 0;
+    align-items: center;
+    gap: 4rem;
+  }
+  .logo{
+    display:flex;
+    justify-items: start;
+    padding-left: 5.5%;
+}
+  .main-header {
+    font-size: 3.875rem;
+    font-weight: 700;
+
+    line-height: 1.2;
+  }
+  .page-01-img{
+    width: 33rem;
+    height: 37rem;
+  }
+  .review-top {
+    justify-content: flex-start;
+    margin-top: 1.25rem;
+  }
+
+  .button{
+    font-size: 1.125rem;
+    max-width: 24rem;
+    padding: 0 .5rem;
+  }
+
+  /*Pg2 & 3*/
+  /* .page-wrapper-02 article,.page-wrapper-03 article{
+    max-width: 36rem;
+  } */
+
+
+
+   .page-wrapper-02, .page-wrapper-03{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    max-height: 32.5rem;
+    gap:5rem;
+  }
+   .page-wrapper-02{
+    flex-direction: row-reverse;
+   }
+
+  .page-wrapper-03{
+    flex-direction: row;
+  }
+
+  .page-02-img, .page-03-img {
+    width:36rem;
+    height: 100%;
+  }
+  .secondary-header{
+    font-size: 3rem;
+    max-width: 40rem;
+    line-height: 1.4;
+    letter-spacing: -0.1rem;
+    padding-bottom: 2rem;
+  }
+  .check-list{
+    max-width: 28rem;
+  }
+  .check-list li {
+    line-height: 1.5;
+    padding-bottom: 1.5rem;
+  }
+  .check-list li:last-child {
+    margin-bottom: 0;
+  }
+
+
+  /*Pg4*/
+  .page-wrapper-04{
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-block{
+    max-width: 35vw;
+    text-align: center;
+  }
+  .square-bullet-numbers{
+    display: flex;
+    flex-direction: row;
+    gap:3rem;
+  }
+
+    /*ARROWS*/
+ .square-bullet-numbers div{
+    position:relative;
+  }
+
+  .square-bullet-numbers div:not(:last-child)::before{
+    position: absolute;
+    content: "";
+    display: inline-block;
+    top: 16px;
+    right: 0px;
+
+    width: 80px;
+    height: 80px;
+    background-image: url(./assets/images/pattern-arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  /*Pg5*/
+  .card-box{
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    min-width: 100%;
+  }
+  .card-wrapper{
+    width: 20%;
+
+  }
+  .card-wrapper button{
+    max-width: 14rem;
+  }
+  .card-wrapper:nth-child(2){
+    width: 25%;
+    padding: 3rem 1.5rem;
+  }
+  .member-review{
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .comment{
+    max-width:60rem;
+    text-align: center;
+  }
+  .review-bottom{
+    justify-content: center;
+  }
+  .membership-header{
+    margin:0 auto;
+  }
+
+}
