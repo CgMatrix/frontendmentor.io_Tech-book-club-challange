@@ -1,38 +1,4 @@
-/*Template Size(px) = 1080x3289*/
-/*
-Colors:
-HSL(12,50%,59%);
 
-Neutral 900 - #062630;
-Neutral 700 - #385159;
-Neutral 200 - #E6E1DF;
-Neutral 100 - #FAF5F3;
-Neutral 0   - #ffffff;
-
-Light Salmon 500 - #FEA36F;
-Light Salmon 100 - #FFE2D1;
-Light Salmon 50  - #FFF5EF;
-
-Text Gradient - linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
-Gradient - linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
-
-Font-weights:
-100	- Thin (Hairline)
-200	- Extra Light (Ultra Light)
-300	- Light
-400	- Normal / Regular
-500	- Medium
-600	- Semi Bold (Demi Bold)
-700	- Bold
-800	- Extra Bold (Ultra Bold)
-900	- Black (Heavy)
-
-Units:
-px:
-|16|32|48|64|80|96|112|128|144|160|176|192|208|224|240|256|272|
-rm:
-|01|02|03|04|05|06|007|008|009|010|011|012|013|014|015|016|017|
-*/
 * {
   margin: 0;
   padding: 0;
@@ -343,7 +309,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-self: center;
-  width: 90%;
+  width: 90vw;
   color: #fff5ef;
   gap: 1rem;
   padding: 1.5rem 0;
@@ -462,7 +428,6 @@ footer {
 }
 
 /*CSS*/
-
 /*MEDIA QUERIES*/
 /* For Tablet devices with a minimum width of 768px (Medium) */
 @media screen and (min-width: 768px) {
@@ -584,7 +549,6 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     gap: none;
-    width: 90%;
     margin: 0 auto;
   }
 }
@@ -670,7 +634,6 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     gap: none;
-    width: 90%;
     margin: 0 auto;
   }
 
@@ -795,7 +758,6 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     gap: none;
-    width: 90%;
     margin: 0 auto;
   }
 }
