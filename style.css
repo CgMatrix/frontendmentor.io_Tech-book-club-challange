@@ -1,38 +1,3 @@
-/*Template Size(px) = 1080x3289*/
-/*
-Colors:
-HSL(12,50%,59%);
-
-Neutral 900 - #062630;
-Neutral 700 - #385159;
-Neutral 200 - #E6E1DF;
-Neutral 100 - #FAF5F3;
-Neutral 0   - #ffffff;
-
-Light Salmon 500 - #FEA36F;
-Light Salmon 100 - #FFE2D1;
-Light Salmon 50  - #FFF5EF;
-
-Text Gradient - linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
-Gradient - linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
-
-Font-weights:
-100	- Thin (Hairline)
-200	- Extra Light (Ultra Light)
-300	- Light
-400	- Normal / Regular
-500	- Medium
-600	- Semi Bold (Demi Bold)
-700	- Bold
-800	- Extra Bold (Ultra Bold)
-900	- Black (Heavy)
-
-Units:
-px:
-|16|32|48|64|80|96|112|128|144|160|176|192|208|224|240|256|272|
-rm:
-|01|02|03|04|05|06|007|008|009|010|011|012|013|014|015|016|017|
-*/
 * {
   margin: 0;
   padding: 0;
@@ -58,7 +23,6 @@ body {
   overflow: visible;
 }
 .page-container-01 {
-  /* background-image: url(./assets/images/pattern-light-bg.svg), url(./assets/images/pattern-glow.svg); */
   background: url(./assets/images/pattern-light-bg.svg), #faf5f3;
   background-blend-mode: multiply;
 
@@ -80,7 +44,6 @@ body {
   flex-direction: column;
   padding: 3rem 1rem 5rem 1rem;
   gap: 2.5rem;
-  /* background-image: url(./assets/images/pattern-light-bg.svg); */
 }
 .page-wrapper-02 {
   display: flex;
@@ -343,11 +306,11 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-self: center;
-  width: 90%;
   color: #fff5ef;
   gap: 1rem;
   padding: 1.5rem 0;
   border-top: 0.15rem solid #e6e1df33;
+  width: 100%;
 
   font-family: "Martian Mono", monospace;
   font-weight: 200;
@@ -377,9 +340,8 @@ footer {
   width: 100%;
   height: 3.5rem;
   border-radius: 0.5rem;
-
   gap: 5%;
-
+  
   font-family: "Martian Mono", monospace;
   font-weight: 600;
   font-style: normal;
@@ -435,30 +397,26 @@ footer {
 }
 
 /*Floating Image*/
-/* 1. Create a relative positioning context for the image */
 .word-wrapper {
   position: relative;
   display: inline-block;
 }
 
-/* 2. Position the image absolutely relative to the wrapper */
 .circle-mark::before {
   content: "";
   position: absolute;
 
-  /* 2. Load your image via CSS */
   background-image: url(./assets/images/pattern-circle.png);
   background-size: contain;
   background-repeat: no-repeat;
 
-  /* 4. Define your PNG size and file path */
   width: 7rem;
   height: 7rem;
 
-  /* Shift the image back by half of its own width and height to center it perfectly */
+
   transform: translate(-7%, -3%);
   z-index: 10;
-  pointer-events: none; /* Ensures clicking through the transparent parts clicks the text instead */
+  pointer-events: none; 
 }
 
 /*CSS*/
@@ -666,12 +624,6 @@ footer {
 
 
   /*Pg2 & 3*/
-  /* .page-wrapper-02 article,.page-wrapper-03 article{
-    max-width: 36rem;
-  } */
-
-
-
    .page-wrapper-02, .page-wrapper-03{
     margin: 0;
     padding: 0;
