@@ -33,6 +33,10 @@ px:
 rm:
 |01|02|03|04|05|06|007|008|009|010|011|012|013|014|015|016|017|
 */
+
+/********/
+/*MOBILE*/
+/********/
 * {
   margin: 0;
   padding: 0;
@@ -461,10 +465,16 @@ footer {
   pointer-events: none; /* Ensures clicking through the transparent parts clicks the text instead */
 }
 
-/*CSS*/
-
+/***************/
 /*MEDIA QUERIES*/
+/***************/
+
+/********/
+/*TABLET*/
+/********/
+
 /* For Tablet devices with a minimum width of 768px (Medium) */
+/* @media screen and (min-width: 768px) { */
 @media screen and (min-width: 768px) {
   body {
     font-size: 1.125rem;
@@ -477,6 +487,7 @@ footer {
     font-size: 3.875rem;
   }
   .page-container-01 {
+
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -666,11 +677,6 @@ footer {
 
 
   /*Pg2 & 3*/
-  /* .page-wrapper-02 article,.page-wrapper-03 article{
-    max-width: 36rem;
-  } */
-
-
 
    .page-wrapper-02, .page-wrapper-03{
     margin: 0;
@@ -733,7 +739,7 @@ footer {
   ul {
   list-style-type: none;
   }
-  
+
  .square-bullet-numbers ul{
     position:relative;
   }
