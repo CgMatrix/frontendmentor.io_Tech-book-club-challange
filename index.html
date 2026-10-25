@@ -15,7 +15,7 @@
     <title>Tech book club landing page</title>
   </head>
   <body>
-    <main class="main-container">
+    <div class="main-container">
       <div class="page-container-01">
         <header class="logo">
           <img class="logo-icon" src="./assets/images/logo.svg" alt="logo" />
@@ -133,24 +133,24 @@
             <h2 class="secondary-header header-block">
               Your tech reading journey
             </h2>
-            <div class="square-bullet-numbers">
-              <ul>
+            <ul class="square-bullet-numbers">
+              <div>
                 <li class="framed-number">1</li>
                 <li>Choose your membership tier</li>
-              </ul>
-              <ul>
+              </div>
+              <div>
                 <li class="framed-number">2</li>
                 <li>Get your monthly book selection</li>
-              </ul>
-              <ul>
+              </div>
+              <div>
                 <li class="framed-number">3</li>
                 <li>Join our discussion forums</li>
-              </ul>
-              <ul>
+              </div>
+              <div>
                 <li class="framed-number">4</li>
                 <li>Attend exclusive meetups</li>
-              </ul>
-            </div>
+              </div>
+            </ul>
         </section>
       </div>
       <!-- PRICING CARDS-->
@@ -213,49 +213,51 @@
               </p>
               <p class="commentator">Sarah Chen, Software Architect</p>
             </article>
+          </div>
         </section>
       </div>
-    </main>
-    <footer class="footer">
-      <section >
-        <h1 class="review-comment">Ready to debug your reading list?</h1>
-        <a href ="#return_to_button" class="button button-green">
-          REVIEW MEMBERSHIP OPTIONS
-          <img class="arrow" src="./assets/images/icon-arrow-up.svg" alt="⬆" />
-        </a>
-        <div class="review-bottom">
-          <img
-            class="users"
-            src="./assets/images/image-avatars.webp"
-            alt="members"
-          />
-          <div class="rating">
-            <div class="stars">
-              <img class="star" src="./assets/images/icon-star.svg" alt="★" />
-              <img class="star" src="./assets/images/icon-star.svg" alt="★" />
-              <img class="star" src="./assets/images/icon-star.svg" alt="★" />
-              <img class="star" src="./assets/images/icon-star.svg" alt="★" />
-              <img class="star" src="./assets/images/icon-star.svg" alt="★" />
-            </div>
-            <p>200+ developers joined already</p>
-          </div>
-        </div>
-      </section>
-        <div class="social-media">
-          <span>© 2024 – Tech Book Club</span>
-          <div class="social-media-logos">
+      <footer >
+        <section class="footer-wrapper">
+          <h1 class="review-comment">Ready to debug your reading list?</h1>
+          <a href ="#return_to_button" class="button button-green">
+            REVIEW MEMBERSHIP OPTIONS
+            <img class="arrow" src="./assets/images/icon-arrow-up.svg" alt="⬆" />
+          </a>
+          <div class="review-bottom">
             <img
+              class="users"
+              src="./assets/images/image-avatars.webp"
+              alt="members"
+            />
+            <div class="rating">
+              <div class="stars">
+                <img class="star" src="./assets/images/icon-star.svg" alt="★" />
+                <img class="star" src="./assets/images/icon-star.svg" alt="★" />
+                <img class="star" src="./assets/images/icon-star.svg" alt="★" />
+                <img class="star" src="./assets/images/icon-star.svg" alt="★" />
+                <img class="star" src="./assets/images/icon-star.svg" alt="★" />
+              </div>
+              <p>200+ developers joined already</p>
+            </div>
+          </div>
+          <div class="social-media">
+            <span>© 2024 – Tech Book Club</span>
+            <div class="social-media-logos">
+              <img
               class="footer-icon"
               src="./assets/images/logo-bluesky.svg"
               alt=""
-            />
-            <img
+              />
+              <img
               class="footer-icon"
               src="./assets/images/logo-linkedin.svg"
               alt=""
-            />
+              />
+            </div>
           </div>
-        </div>
-    </footer>
+        </section>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
