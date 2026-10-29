@@ -352,7 +352,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-self: center;
   color: #fff5ef;
   gap: 1rem;
   padding: 1.5rem 0;
