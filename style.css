@@ -33,7 +33,9 @@ px:
 rm:
 |01|02|03|04|05|06|007|008|009|010|011|012|013|014|015|016|017|
 */
-* {
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
 }
@@ -55,9 +57,6 @@ footer {
   background-repeat: repeat;
   border-radius: 1rem 1rem 0 0;
   color: #fff5ef;
-
-  width: 100%;
-  flex-shrink: 0;
 }
 
 /************/
@@ -355,19 +354,21 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-self: center;
   color: #fff5ef;
   gap: 1rem;
   padding: 1.5rem 0;
   border-top: 0.15rem solid #e6e1df33;
+  width: 90%;
 
   font-family: "Martian Mono", monospace;
   font-weight: 200;
   font-style: normal;
   font-size: 0.75rem;
 }
-.social-media-logos {
-  display: flex;
-  gap: 1rem;
+
+.social-media-logos :first-child {
+  padding-right: 1rem;
 }
 .review-comment {
   font-family: "Martian Mono", monospace;
@@ -496,7 +497,6 @@ footer {
 }
 
 /*CSS*/
-
 /*MEDIA QUERIES*/
 /* For Tablet devices with a minimum width of 768px (Medium) */
 @media screen and (min-width: 768px) {
@@ -618,7 +618,6 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     gap: none;
-    width: 90%;
   }
 }
 /*MEDIA QUERIES*/
@@ -819,5 +818,13 @@ footer {
   }
   .membership-header {
     margin: 0 auto;
+  }
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    gap: none;
+    width: 90%;
   }
 }
