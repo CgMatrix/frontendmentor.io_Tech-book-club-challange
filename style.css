@@ -55,6 +55,9 @@ footer {
   background-repeat: repeat;
   border-radius: 1rem 1rem 0 0;
   color: #fff5ef;
+
+  width: 100%;
+  flex-shrink: 0;
 }
 
 /************/
