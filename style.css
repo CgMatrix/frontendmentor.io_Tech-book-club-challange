@@ -350,6 +350,11 @@ footer {
   width: 18px; /* Icon width */
   height: 18px; /* Icon height */
 }
+.horizontal-line {
+  height: 0.15rem;
+  background-color: #e6e1df33;
+  border: none;
+}
 .social-media {
   display: flex;
   flex-direction: column;
@@ -358,9 +363,6 @@ footer {
   color: #fff5ef;
   gap: 1rem;
   padding: 1.5rem 0;
-  border-top: 0.15rem solid #e6e1df33;
-  width: 90%;
-
   font-family: "Martian Mono", monospace;
   font-weight: 200;
   font-style: normal;
@@ -496,8 +498,11 @@ footer {
   pointer-events: none; /* Ensures clicking through the transparent parts clicks the text instead */
 }
 
+/***************************/
 /*CSS*/
 /*MEDIA QUERIES*/
+/***************************/
+
 /* For Tablet devices with a minimum width of 768px (Medium) */
 @media screen and (min-width: 768px) {
   body {
@@ -615,9 +620,12 @@ footer {
     margin-bottom: 4rem;
   }
   .social-media {
+    display: flex;
     flex-direction: row;
+    align-content: center;
     justify-content: space-between;
-    gap: none;
+    width: 100%;
+    padding: 1.5rem 2rem;
   }
 }
 /*MEDIA QUERIES*/
