@@ -39,12 +39,12 @@ Your users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.jpeg)
 
 
 ### Links
 
-- Live Site URL: [https://cgmatrix.github.io/frontendmentor.io_3-column-preview-card-component/](https://cgmatrix.github.io/frontendmentor.io_3-column-preview-card-component/)
+- Live Site URL: [https://github.com/CgMatrix/frontendmentor.io_Tech-book-club-challange](https://cgmatrix.github.io/frontendmentor.io_Tech-book-club-challange/)
 
 ## My process
 
@@ -58,65 +58,57 @@ Your users should be able to:
 
 ### What I learned:
 
-This challange helped me to improve skills based on:
+This challange helped me to improve and gain more skills based on:
 - Semantic HTML tags
 - CSS flexbox
 - Media queries - @media
-- Pseudo code - :hover
-- Pseudo class - :root
+- Pseudo class - :hover
+- Pseudo class - :focus
  
-This excersize also helped me to re-build skills required for developing a responsive web page by starting with mobile first, desktop second.
+This excersize also helped me improve skills required for developing a responsive web page by starting with mobile first, desktop last.
 
 Example of code snippest after research on MDN:
 ```html
- <p class="button button-B">Learn More</p>
+<ul class="square-bullet-numbers">
+  <div>
+    <li class="framed-number">1</li>
+    <li>Choose your membership tier</li>
+  </div>
+  <div>
+    <li class="framed-number">2</li>
+    <li>Get your monthly book selection</li>
+  </div>
+  <div>
+    <li class="framed-number">3</li>
+    <li>Join our discussion forums</li>
+  </div>
+  <div>
+    <li class="framed-number">4</li>
+    <li>Attend exclusive meetups</li>
+  </div>
+</ul>
 ```
 
 ```css
-:root {
-  /*CSS Functions*/
-  /*VAR()*/
+  .square-bullet-numbers div:not(:last-child)::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    top: 16px;
+    right: 0px;
 
-  /*Colors*/
-  --gray-100: hsl(0, 0%, 95%);
-  --gold-500: hsl(31, 77%, 52%);
-  --cyan-800: hsl(184, 100%, 22%);
-  --green-950: hsl(179, 100%, 13%);
-  --black: hsl(0, 0%, 0%);
-}
-.button {
-  display: flex;
-  background-color: var(--gray-100);
-  border: 2px solid var(--gray-100);
-  margin-top: auto;
-  margin-bottom: 0;
-
-  width: 8rem;
-
-  border-radius: 1.5rem;
-  padding: 0.75rem;
-
-  justify-content: center;
-  align-items: center;
-}
-.button-B {
-  color: var(--green-950);
-  font-family: "Lexend Deca", sans-serif;
-}
-
-.button-B:hover {
-  border: 2px solid var(--gray-100);
-  background-color: var(--cyan-800);
-  color: var(--gray-100);
-  cursor: pointer;
-}
+    width: 80px;
+    height: 80px;
+    background-image: url(./assets/images/pattern-arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 ```
 
 ### Continued development:
 
 Based on extending skills for future projects, I'm planning to focus more on the following:
-- CSS Advanced Animations
-- SaaS
+- Tailwind
 
 ### Useful resources:
 
@@ -125,8 +117,9 @@ Based on extending skills for future projects, I'm planning to focus more on the
 - [CodePen](https://codepen.io/) - An amazing website to study other's code.
 
 ### Experience:
-Discovering a new technique to optimise code using the CSS var() function placed inside the :root pseudo-class, I helped me to code faster by only updating one area when new values are required, instead of many.
 
+A content property is commanded by a rule. A ::before pseudo-element will not render on the page unless a content property (even content: "";) is explicitly declared.
+The pseudo-element behaves as an inline element by default. If you need to set explicit dimensions, margins, or padding, change it to "display: inline-block" or use positioning.
 ## Author
 
 - Github - [CgMatrix](https://github.com/CgMatrix)
