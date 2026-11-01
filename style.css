@@ -724,11 +724,11 @@ footer {
   }
 
   /*ARROWS*/
-  .square-bullet-numbers div {
+  .square-bullet-numbers ul {
     position: relative;
   }
 
-  .square-bullet-numbers div:not(:last-child)::before {
+  .square-bullet-numbers ul:not(:last-child)::before {
     position: absolute;
     content: "";
     display: inline-block;
