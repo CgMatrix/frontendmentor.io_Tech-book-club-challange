@@ -1,7 +1,7 @@
 # frontendmentor.io_Tech-book-club-challange
 A challange from FrontenMentor to create a scrollable membership weboage
 
-This is a solution to the [3 Column Preview Card Component challenge on Frontend Mentor](https://cgmatrix.github.io/frontendmentor.io_3-column-preview-card-component/). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to [The Tech Book Club Challange on Frontend Mentor](https://cgmatrix.github.io/frontendmentor.io_Tech-book-club-challange/). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -108,6 +108,9 @@ Example of code snippest after research on MDN:
 ### Continued development:
 
 Based on extending skills for future projects, I'm planning to focus more on the following:
+- Advanced CSS
+- CSS Animations
+- SaaS
 - Tailwind
 
 ### Useful resources:
@@ -118,8 +121,9 @@ Based on extending skills for future projects, I'm planning to focus more on the
 
 ### Experience:
 
-A content property is commanded by a rule. A ::before pseudo-element will not render on the page unless a content property (even content: "";) is explicitly declared.
+I've discovered that a content property is commanded by a rule. Therefore, a ::before pseudo-element will not render on the page unless a content property (even content: "";) is explicitly declared.
 The pseudo-element behaves as an inline element by default. If you need to set explicit dimensions, margins, or padding, change it to "display: inline-block" or use positioning.
+
 ## Author
 
 - Github - [CgMatrix](https://github.com/CgMatrix)
