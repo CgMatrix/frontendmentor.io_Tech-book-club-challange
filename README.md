@@ -39,7 +39,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpeg)
+![](./Screenshot.jpeg)
 
 
 ### Links
