@@ -1,38 +1,3 @@
-/*Template Size(px) = 1080x3289*/
-/*
-Colors:
-HSL(12,50%,59%);
-
-Neutral 900 - #062630;
-Neutral 700 - #385159;
-Neutral 200 - #E6E1DF;
-Neutral 100 - #FAF5F3;
-Neutral 0   - #ffffff;
-
-Light Salmon 500 - #FEA36F;
-Light Salmon 100 - #FFE2D1;
-Light Salmon 50  - #FFF5EF;
-
-Text Gradient - linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
-Gradient - linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
-
-Font-weights:
-100	- Thin (Hairline)
-200	- Extra Light (Ultra Light)
-300	- Light
-400	- Normal / Regular
-500	- Medium
-600	- Semi Bold (Demi Bold)
-700	- Bold
-800	- Extra Bold (Ultra Bold)
-900	- Black (Heavy)
-
-Units:
-px:
-|16|32|48|64|80|96|112|128|144|160|176|192|208|224|240|256|272|
-rm:
-|01|02|03|04|05|06|007|008|009|010|011|012|013|014|015|016|017|
-*/
 *,
 ::before,
 ::after {
@@ -46,7 +11,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400; /*value form 100 - 900*/
+  font-weight: 400;
   font-style: normal;
   font-size: 1.25rem;
 }
@@ -71,7 +36,6 @@ footer {
   overflow: visible;
 }
 .page-container-01 {
-  /* background-image: url(./assets/images/pattern-light-bg.svg), url(./assets/images/pattern-glow.svg); */
   background: url(./assets/images/pattern-light-bg.svg), #faf5f3;
   background-blend-mode: multiply;
 
@@ -96,7 +60,6 @@ footer {
   flex-direction: column;
   padding: 3rem 1rem 5rem 1rem;
   gap: 2.5rem;
-  /* background-image: url(./assets/images/pattern-light-bg.svg); */
 }
 .page-wrapper-02 {
   display: flex;
@@ -223,7 +186,7 @@ footer {
 
 /*Checkmark SVG icon as bullet setup*/
 .check-list {
-  list-style: none; /* Removes default bullets */
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -409,18 +372,15 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* max-width: 24rem; */
 
   height: 3.5rem;
   border-radius: 0.5rem;
-
-  /* gap: 5%; */
 
   font-family: "Martian Mono", monospace;
   font-weight: 600;
   font-style: normal;
   font-size: 1rem;
-  /* letter-spacing: %; */
+
   text-decoration: none;
 }
 .button-white {
@@ -436,19 +396,24 @@ footer {
   margin: 0 auto;
 }
 
+/***************/
 /*HOVER EFFECTS*/
+/***************/
 .button-white:hover,
 .button-green:hover {
   cursor: pointer;
 }
 
-/*ACTIVE EFFECTS*/
-.button-white:active {
+/***************/
+/*FOCUS EFFECTS*/
+/***************/
+
+.button-white:focus {
   cursor: pointer;
   outline: 0.15rem double black;
   outline-offset: 0.15rem;
 }
-.button-green:active {
+.button-green:focus {
   cursor: pointer;
   outline: 0.15rem double #fff5ef;
   outline-offset: 0.15rem;
@@ -472,39 +437,39 @@ footer {
 }
 
 /*Floating Image*/
-/* 1. Create a relative positioning context for the image */
 .word-wrapper {
   position: relative;
   display: inline-block;
 }
 
-/* 2. Position the image absolutely relative to the wrapper */
 .circle-mark::before {
   content: "";
   position: absolute;
 
-  /* 2. Load your image via CSS */
   background-image: url(./assets/images/pattern-circle.png);
   background-size: contain;
   background-repeat: no-repeat;
 
-  /* 4. Define your PNG size and file path */
   width: 7rem;
   height: 7rem;
 
-  /* Shift the image back by half of its own width and height to center it perfectly */
   transform: translate(-7%, -3%);
   z-index: 10;
-  pointer-events: none; /* Ensures clicking through the transparent parts clicks the text instead */
+  pointer-events: none;
 }
 
 /***************************/
-/*CSS*/
 /*MEDIA QUERIES*/
 /***************************/
 
 /* For Tablet devices with a minimum width of 768px (Medium) */
 @media screen and (min-width: 768px) {
+  *,
+  ::before,
+  ::after {
+    margin: 0;
+    padding: 0;
+  }
   body {
     font-size: 1.125rem;
   }
@@ -624,13 +589,18 @@ footer {
     flex-direction: row;
     align-content: center;
     justify-content: space-between;
-    width: 100%;
     padding: 1.5rem 2rem;
   }
 }
 /*MEDIA QUERIES*/
 /* For Desktop devices with a minimum width of 992px*/
 @media screen and (min-width: 992px) {
+  *,
+  ::before,
+  ::after {
+    margin: 0;
+    padding: 0;
+  }
   body {
     font-size: 1.24rem;
     line-height: 1.5;
@@ -711,9 +681,6 @@ footer {
   }
 
   /*Pg2 & 3*/
-  /* .page-wrapper-02 article,.page-wrapper-03 article{
-    max-width: 36rem;
-  } */
 
   .page-wrapper-02,
   .page-wrapper-03 {
@@ -742,10 +709,10 @@ footer {
   }
   .secondary-header {
     font-size: 3rem;
-    max-width: 40rem;
     line-height: 1.4;
     letter-spacing: -0.1rem;
     padding-bottom: 2rem;
+    max-width: 32rem;
   }
   .check-list {
     max-width: 28rem;
